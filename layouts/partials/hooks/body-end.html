@@ -1,0 +1,12 @@
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('id_ID')) { // <--- Pastikan 'id_ID' di sini huruf besar
+        const idValue = urlParams.get('id_ID'); // <--- Pastikan 'id_ID' di sini huruf besar
+        alert('Parameter id_ID ditemukan: ' + idValue);
+        console.log('Parameter id_ID:', idValue);
+    } else {
+        console.log('Parameter id_ID tidak ditemukan di URL.');
+    }
+});
+</script>
